@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section id="imgDiv">
+    <p id="credit">Image credit: Remy Gieling</p>
+    <div id="frame"></div>
+    <img src="./images/VR_img2.jpg" id="img2"></img>
+    <img src="./images/VR_img1.jpg" id="img1"></img>
+</section>
+
+
+
+<section id="main">
+
+    
+
+    <section id="formContainer">
+        
+        <form action="#" method="post">
+
+            <img src="./images/Oculus-logo.svg" id="oculusLogo">
+
+            <p>Sign up for exclusive access to events, products, and more!</p>
+
+            <fieldset id="details">
+                <legend>Details</legend>
+
+                <label for="firstName">First name:</label>
+                <input type="text" name="firstName" val="firstName" id="firstName" placeholder="John" required>
+                
+                <label for="lastName">Last name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Doe" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+
+                <label for="pass1">Password:</label>
+                <input type="password" name="pass1" id="pass1" required>
+
+                <label for="pass2">Confirm password:</label>
+                <input type="password" name="pass2" id="pass2" required>
+            </fieldset>
+
+            <fieldset id="complete">
+                <div>
+                    <input type="checkbox" value="news" id="news" name="news" checked>
+                    <label for="news">I would like to receive announcements, and product updates.</label>
+                </div>
+    
+                <button type="submit" id="createBtn">Create account</button>
+    
+                <p>By creating an account you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
+    
+                <button type="reset" id="resetBtn">Reset form</button>
+            </fieldset>
+
+            <p>Copyright &#169; 2023 Oculus</p>
+
+        </form>
+
+    </section>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
