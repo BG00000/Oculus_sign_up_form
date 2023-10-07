@@ -16,6 +16,6 @@ Some things to address:
 - The 'copyright' information at the bottom of the form is unreachable by the scrollbar at shorter screen heights
 - The 'confirm password' field doesn't need to repeat the 'must contain' message
 - Could add a confirmation page after creating an account
-could add a reCAPTCHA 'not a robot' check 
+- could add a reCAPTCHA 'not a robot' check 
 
 Disclaimer: This project is not affiliated with Oculus in any way!
