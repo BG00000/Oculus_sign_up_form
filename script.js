@@ -13,7 +13,7 @@ let password = ''
 emailInput.addEventListener('input', () => {
     if(emailInput.validity.valid) {
         emailHint.style.display = "none"
-    } else {
+    } else if (!emailInput.validity.valid) {
         emailHint.style.display = "block"
     }
 })
