@@ -33,19 +33,23 @@
                 <legend>Details</legend>
 
                 <label for="firstName">First name:</label>
-                <input type="text" name="firstName" val="firstName" id="firstName" placeholder="John" required>
+                <input type="text" name="firstName" val="firstName" id="firstName" placeholder="John" maxlength="25" pattern="^[A-Za-z]+$" required>
                 
                 <label for="lastName">Last name:</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Doe" required>
-
+                <input type="text" name="lastName" id="lastName" placeholder="Doe" maxlength="25" pattern="^[A-Za-z]+$" required>
+                
                 <label for="email">Email:</label>
+                <label for="email" id="validEmail">*Please provide a valid email</label>
                 <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
 
                 <label for="pass1">Password:</label>
-                <input type="password" name="pass1" id="pass1" required>
+                <label for="pass1" id="validPass">*Password must contain at least 1 capital letter, 1 number, and 1 special character</label>
+                <input type="password" name="pass1" id="pass1" pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}$" placeholder="#A123456" required>
 
                 <label for="pass2">Confirm password:</label>
-                <input type="password" name="pass2" id="pass2" required>
+                <label for="pass2" id="validPass2">*Password must contain at least 1 capital letter, 1 number, and 1 special character</label>
+                <label for="pass2" id="matchPass">*Passwords do not match</label>
+                <input type="password" name="pass2" id="pass2" pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}$" placeholder="#A123456" required>
             </fieldset>
 
             <fieldset id="complete">

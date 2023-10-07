@@ -24,8 +24,8 @@ body section img {
 }
 
 body {
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 #main {
@@ -35,13 +35,15 @@ body {
     justify-content: flex-end;
 }
 
+
 #formContainer {
     display: flex;
     flex-direction: column;
     flex: 0.3;
     min-width: 415px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding: 20px;
+    overflow-y: scroll;
 }
 
 fieldset {
@@ -128,6 +130,9 @@ fieldset input {
     #img2 {
         display: block;
     }
+    #img1 {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1234px) {
@@ -146,3 +151,20 @@ fieldset input {
 #oculusLogo {
     height: 50px;
 }
+
+#pass1:invalid,
+#pass2:invalid,
+#email:invalid {
+    border: 1.5px solid red;
+    border-radius: 2px;
+}
+
+#validPass,
+#matchPass,
+#validPass2,
+#validEmail {
+    font-size: 11px;
+    color: red;
+}
+
+
