@@ -1,5 +1,7 @@
 # Oculus Sign-Up Form
 
+<em>see it here:<em> https://htmlpreview.github.io/?https://github.com/BG00000/Oculus_sign_up_form/blob/main/index.html
+
 <img src="./images/sample1.png" alt="The form as viewed by a wide screen" width="700">
 
 <em>The form as viewed by a wide screen</em>
